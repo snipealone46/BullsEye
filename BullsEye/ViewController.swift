@@ -19,7 +19,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func showAlert() {
+        let alert = UIAlertController(title: "Hello, World", message: "This is my frist app!", preferredStyle: .Alert)
+        
+        let action = UIAlertAction(title: "Awesome", style: .Default, handler: nil)
+        
+        alert.addAction(action)
+        
+        presentViewController(alert, animated: true, completion: nil)
+    }
 
 }
 
